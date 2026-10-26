@@ -17,3 +17,8 @@ output "page_match_and_group" {
   description = "Page for the match and group exercise"
   value       = resource.page.match_and_group
 }
+
+output "layout_default" {
+  description = "Default split layout"
+  value       = resource.layout.default
+}
