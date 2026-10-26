@@ -1,4 +1,4 @@
-resource "activity" "check_match_group" {
+resource "task" "check_match_group" {
   title  = "Run the aggregation pipeline with $match and $group"
   target = resource.container.mongodb
 
@@ -11,6 +11,4 @@ resource "activity" "check_match_group" {
     script  = "scripts/activity/solve.sh"
     timeout = "30s"
   }
-
-  page = resource.page.match_and_group
 }
